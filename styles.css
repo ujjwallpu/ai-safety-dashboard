@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f7f9fa;
+}
+
+.incident-list {
+    margin-bottom: 30px;
+}
+
+.incident-card {
+    background: #fdfefe;
+    padding: 20px;
+    border-left: 6px solid #999;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.incident-card:hover {
+    transform: scale(1.01);
+    background: #f0f8ff; /* light blue hover effect */
+}
+
+.incident-card h3 {
+    margin: 0 0 10px;
+    color: #34495e;
+}
+
+.incident-card p {
+    margin: 5px 0;
+}
+
+.severity-tag {
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.severity-High {
+    background-color: #e74c3c;
+}
+
+.severity-Medium {
+    background-color: #f39c12;
+}
+
+.severity-Low {
+    background-color: #27ae60;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+button.view-btn {
+    margin-top: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button.view-btn:hover {
+    background: #2980b9;
+}
+
+.form-section {
+    background: #e9f7ef; /* light greenish background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #27ae60;
+}
